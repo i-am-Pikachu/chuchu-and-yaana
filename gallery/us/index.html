@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Chuchu & Yaana</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../../nav.css">
+	<link rel="shortcut icon" href="https://cdn-editing-temp.picsart.com/editing-temp-landings/ece1ff8a-1048-4bb0-8c7f-d0a446b5504c.png">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="hearts-container">
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	  <div class="heart"></div>
+	</div>
+
+	<!--Nahiyaan &#10084; Caitlin-->
+	<div id="nav">
+		<div id="title"><span style="font-size: 40px;">Nahiyaan <span style='color: #FF69B4;'>&#10084;</span> Caitlin</span></div>
+		<a href="../../home.html">
+			<div id="home" class="nav-items">Home</div>
+		</a>
+		<a href="../../timeline.html">
+			<div id="timeline" class="nav-items">Timeline</div>
+		</a>
+		<a href="../../gallery.html">
+			<div id="gallery" class="nav-items">Gallery</div>
+		</a>
+		<a href="../../misc.html">
+			<div id="misc" class="nav-items">Misc</div>
+		</a>
+	</div>
+
+	<a id="back-btn" href="../../gallery.html">
+		<div></div>
+	</a>
+
+	<div id="image-container">
+		<img id="loading-placeholder" src="../loading.gif">
+		<img id="image">
+	</div>
+
+	<script src="script.js"></script>
+
+
+	<button id="previous-image" onclick="prev_image()"></button>
+	<span id="current-image"></span>
+	<span id="sep">/</span>
+	<span id="total-image"></span>
+	<button id="next-image" onclick="next_image()"></button>
+	
+
+	<div class="music-widget" onclick="control()">
+	  <div class="music-info">
+	    <span id="song-name">It Was Love At First Sight</span>
+	    <div class="eq-bars" id="eqBars">
+	      <span></span><span></span><span></span>
+	    </div>
+	  </div>
+	</div>
+	<audio id="bgMusic" autoplay loop volume=0.5><source src="../../music.mp3"></audio>
+	<script src="../../bgMusic.js"></script>
+	
+</body>

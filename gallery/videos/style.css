@@ -1,0 +1,129 @@
+#gallery:after { 
+  content:""; 
+  float:left; 
+  background:white; 
+  width:100%; 
+  height:3px; 
+  border-radius: 3px;
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+
+#gallery:hover::after { 
+  content:""; 
+  float:left; 
+  background:white; 
+  width:100%; 
+  height:3px; 
+  border-radius: 3px;
+  transform: translateY(-15px);
+}
+
+#back-btn div{
+	width: 64px;
+	height: 64px;
+	margin-top: 25px;
+	background: top url("back_btn.png") no-repeat;
+	transition: 0.2s;
+	display: inline-block;
+}
+
+#back-btn div:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#back-btn {
+	text-decoration: none;
+}
+
+#video-container {
+	width: 92%;
+	height: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: absolute;
+	left: 70px;
+	top: 110px;
+	float: right;
+}
+
+#video {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	object-position: center;
+	border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#previous-image {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	color: white;
+	transition: 0.2s;
+	border-radius: 10px;
+	background: center url("back_btn.png") no-repeat;
+	border: 0px;
+	position: absolute;
+	left: 44%;
+	top: 90%;
+}
+
+#current-image {
+	font-size: 25px;
+	position: absolute;
+	left: 48%;
+	top: calc(91% + 3px);
+}
+
+#sep {
+	font-size: 25px;
+	position: absolute;
+	left: calc(52% - 5px);
+	top: calc(91% + 3px);
+}
+
+#total-image {
+	font-size: 25px;
+	position: absolute;
+	left: 54%;
+	top: calc(91% + 3px);
+}
+
+#next-image {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	color: white;
+	transition: 0.2s;
+	border-radius: 10px;
+	background: center url("front_btn.png") no-repeat;
+	border: 0px;
+	position: absolute;
+	left: 56%;
+	top: 90%;
+}
+
+#previous-image:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#next-image:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+#loading-placeholder {
+	width: 70px;
+	position: absolute;
+	left: 48%;
+	top:46%;
+	z-index: -1;
+}
