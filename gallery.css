@@ -1,0 +1,81 @@
+#folder-container {
+	margin: 20px;
+
+}
+
+.folder-card {
+	display: inline-flex;
+	height: 200px;
+	width: 268px;
+	background-color: #FFB69F;
+	opacity: 0.7;
+	margin: 20px;
+	transition: all 0.2s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-card {
+	margin-top: auto;
+	height: 30px;
+	width: 268px;
+	background-color: #ffffff;
+	opacity: 0.5;
+	transition: 0.3s;
+}
+
+
+.folder-card:hover {
+	transform: scale(1.1);
+}
+
+.folder-card:hover > .title-card{
+	transform: translateY(-10px);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+
+#gallery:after { 
+  content:""; 
+  float:left; 
+  background:white; 
+  width:100%; 
+  height:3px; 
+  border-radius: 3px;
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+
+#gallery:hover::after { 
+  content:""; 
+  float:left; 
+  background:white; 
+  width:100%; 
+  height:3px; 
+  border-radius: 3px;
+  transform: translateY(-15px);
+}
+
+#caitlin {
+	background: top url("gallery/caitlin/thumbnail.png") no-repeat;
+}
+
+#baby-nahiyaan {
+	background: top url("gallery/baby_nahiyaan/thumbnail.png") no-repeat;
+}
+
+#baby-caitlin {
+	background: top url("gallery/baby_caitlin/thumbnail.png") no-repeat;
+}
+
+#us {
+	background: top url("gallery/us/thumbnail.png") no-repeat;
+}
+
+#videos {
+	background: top url("gallery/videos/thumbnail.png") no-repeat;
+}
