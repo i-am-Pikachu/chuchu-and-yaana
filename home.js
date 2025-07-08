@@ -37,6 +37,11 @@ function getDuration(fromDate) {
 	      	return `${years} ${years_}`
 	      }
 
+	      if (years == 0 && days == 0) {
+	      	console.log("yes")
+	      	return `${months} ${months_}`
+	      }
+
 	      if (years == 0) {
 	      	return `${months} ${months_} ${days} ${days_}`;
 	      }
