@@ -1,5 +1,6 @@
 const eqBars = document.querySelectorAll('#eqBars span');
 const audio = document.getElementById("bgMusic");
+document.getElementById("song-name").innerText = "Sailor Song - Gigi Perez";
 
 function setEqAnimationState(state) {
   eqBars.forEach(bar => {
